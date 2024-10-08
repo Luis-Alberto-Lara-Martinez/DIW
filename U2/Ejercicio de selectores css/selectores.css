@@ -1,0 +1,30 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+#main{
+    background-color: grey;
+}
+.especial{
+    color: blue;
+}
+h2, h3{
+    border: 1px solid orange;
+}
+ul li{
+    color: red;
+}
+li ul li {
+    color: green;
+}
+.antes{
+    background-color: pink;
+}
+img{
+    border: 5px solid black;
+}
+span>img{
+    border: 5px solid red;
+}
+p+h3{
+    background-color: blue;
+}
