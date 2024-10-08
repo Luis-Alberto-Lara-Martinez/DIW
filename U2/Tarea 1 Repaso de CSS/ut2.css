@@ -1,0 +1,151 @@
+/*1. Colores y fondos*/
+#coloresFondos h2 {
+    background-color: aqua;
+    color: blueviolet;
+    opacity: 0.5;
+}
+#coloresFondos p {
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+}
+
+/*2. Tipografía*/
+#tipografia h2, #tipografia h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100px;
+}
+#tipografia p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+}
+
+/*3. Espaciado y alineación*/
+#espaciado{
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+#espaciado ul{
+    list-style-type: none;
+}
+#espaciado ul li{
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+/*4. Bordes y sombras*/
+#bordesSombras{
+    border: 5px dotted blueviolet;
+    border-radius: 15px;
+    box-shadow: 20px -10px 10px rgb(120, 350, 276, 0.75);
+}
+
+/*5. Posicionamiento básico*/
+#posicionamiento p{
+    position: relative;
+}
+#posicionamiento footer{
+    position: absolute;
+    bottom: 0;
+}
+
+/*6. Listas y Estilos*/
+#productos ul{
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+/*7. Estilo de botones*/
+#botones button{
+    background-color: rgb(0, 75, 0);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*8. Estilos de Tabla*/
+#tablas table, #tablas tr, #tablas th, #tablas td{
+    border: 2px solid blue;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+/*9. Espaciado en diferentes elementos*/
+#contenedor h2{
+    margin: 50px;
+    padding: 20px;
+}
+#contenedor p{
+    margin: 10px;
+    padding: 50px;
+}
+#contenedor ul{
+    margin: 100px;
+    padding: 80px;
+}
+
+/*10. Imágenes y estilos*/
+#imagenes img{
+    border: 5px solid yellow;
+    width: 30%;
+    height: 30%;
+    border-radius: 25px;
+}
+
+/*11. Estilos de formulario*/
+#formulario form{
+    width: 500px;
+    height: 120px;
+    border: 2px solid blue;
+    margin: 50px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*12. Utilización de clases*/
+.clase{
+    background-color: blue;
+    color: white;
+}
+.titulo{
+    text-align: center;
+    border: 2px solid black;
+}
+.imgNueva{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+/*13. Estilo de enlaces*/
+#enlaces a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/*14. Efectos de texto*/
+#efectosTexto h3{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 5px purple;
+}
+#efectosTexto p{
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 10px blue;
+}
+
+/*15. Colocación de elementos en línea*/
+#contenedor .elemento{
+    display: inline-block;
+}
