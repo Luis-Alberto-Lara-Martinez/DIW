@@ -1,0 +1,97 @@
+/*Distribucion 1
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+    width: 650px;
+    height: 250px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+}
+
+Distribucion 2
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+    width: 650px;
+    height: 250px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+}
+
+Distribucion 3
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+    width: 650px;
+    height: 250px;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+}
+
+Distribucion 4
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+    width: 650px;
+    height: 250px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+}
+
+Distribucion 5
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+    width: 650px;
+    height: 250px;
+    gap: 10px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+    flex-grow: 0;
+}
+.flex-item:hover {
+    background-color: purple;
+    flex-grow: 1;
+    height: 50px;
+    transition: 0.5s;
+}
+
+Distribucion 6*/
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+    width: 650px;
+    height: 250px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+    width: calc(20% - 10px);
+}
