@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #1D212C;
+    color: white;
+    margin-top: 50px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.contenedor-conciertos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card,
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px blue;
+}
+
+.card {
+    width: calc(300px+50px);
+    height: calc(200px+50px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.textos>p {
+    margin-top: auto;
+}
+
+.card:nth-child(1) {
+    background-image: url("1.jpg");
+}
+
+.card:nth-child(2) {
+    background-image: url("2.jpg");
+}
+
+.card:nth-child(3) {
+    background-image: url("3.jpg");
+}
+
+.card:nth-child(4) {
+    background-image: url("4.jpg");
+}
+
+.card:nth-child(5) {
+    background-image: url("5.jpg");
+}
+
+.card:nth-child(6) {
+    background-image: url("6.jpg");
+}
+
+.banner {
+    background-image: url("banner.jpg");
+    display: grid;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    width: calc(300px+50px);
+    height: calc(200px+50px);
+}
+
+.banner * {
+    padding: 5%;
+}
+
+.boton {
+    height: 40px;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFD600;
+}
+
+.boton:hover {
+    text-decoration: underline;
+    background-color: blue;
+}
+
+@media (max-width:900px) {
+    .contenedor{
+        grid-template-columns: 2fr 1fr;
+    }
+    .contenedor-conciertos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor-conciertos{
+        grid-template-columns: 1fr;
+    }
+}
