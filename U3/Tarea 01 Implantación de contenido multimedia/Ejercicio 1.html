@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        .foto-1>img {
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="foto-1">
+        <figure>
+            <img class="general" src="./imagen/Ryan.jpg">
+            <p>Imagen 800x600</p>
+        </figure>
+    </div>
+    <div class="foto-2">
+        <picture>
+            <source srcset="photo.webp" type="imagenes/webp" />
+            <source srcset="photo.png" type="imagenes/png" />
+            <img src="./imagen/Ryan.jpg" alt="photo">
+        </picture>
+    </div>
+    <div class="foto-3">
+        <picture>
+            <source srcset="imagen/Ryan.webp" type="image/webp" media="(min-width: 1200px)" />
+            <source srcset="imagen/Ryan.png" type="image/png" media="(min-width: 1200px)" />
+
+            <source srcset="imagen/Ryan.webp" type="image/webp" media="(min-width: 768px)" />
+            <source srcset="imagen/Ryan.png" type="image/png" media="(min-width: 768px)" />
+
+            <source srcset="imagen/Ryan.webp" type="image/webp" />
+            <source srcset="imagen/Ryan.png" type="image/png" />
+
+            <img src="./imagen/Ryan.jpg" alt="Descripción de la imagen">
+        </picture>
+    </div>
+</body>
+
+</html>
