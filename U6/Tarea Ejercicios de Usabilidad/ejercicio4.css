@@ -1,0 +1,15 @@
+.container {
+    width: 80%;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.navigation a {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
